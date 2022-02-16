@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        header{
+            margin-left: 40px
+        }
+        .contenedor{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        nav a:hover{
+            color:cadetblue;   
+        }
+       
+        aside {
+            width: 30%;
+            padding-right: 15px;
+            margin-right: 50px;
+            float: left;
+            font-style: italic;
+                 
+        }
+        main{
+            width: 55%;
+            float: right;
+        }
+        iframe{
+            width: 150%;
+            height: 450px;
+        }
+
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clavi</title>
+</head>
+<body>
+    <div class="contenedor">
+            <header>
+                    <h1 style="color:darkslategray">Juan Camilo Clavijo Dominguez</h1>
+            </header>
+            <nav>
+                <a href="./perfil.html" target="iframeDetails" >Perfil</a>
+                <a href="./estudios.html" target="iframeDetails" >Estudios</a>
+                <a href="./habilidades.html" target="iframeDetails" >Habilidades</a>
+                <a href="./contacto.html" target="iframeDetails">Contacto</a>
+            </nav>
+            <br>
+            <aside>
+                <img src="img/img.png" alt="foto">
+            </aside>
+            
+            <main>
+                <h2>Datos</h2>
+                <iframe src="./perfil.html" id="iframeDetails" name="iframeDetails" frameborder="border:none"></iframe>  
+            </main>
+
+            
+    </div>
+    
+
+</body>
+</html>
